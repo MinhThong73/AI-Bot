@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 # Load biến môi trường (chỉ dùng khi chạy local)
-load_dotenv()
+#load_dotenv()
 
 # Cấu hình API key
 genai.configure(api_key="AIzaSyD74DAMCjIDlqRm2hvsm0krWFC7xftBdCs")
@@ -60,5 +60,6 @@ if prompt:
                 st.write(response.text)
             except Exception as e:
                 st.error(f"Có lỗi xảy ra: {e}")
+
 
 
