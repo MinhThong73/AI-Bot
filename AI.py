@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 #load_dotenv()
 
 # Cấu hình API key
-genai.configure(api_key="AIzaSyD74DAMCjIDlqRm2hvsm0krWFC7xftBdCs")
+genai.configure(api_key=".")
 
 # Cấu hình sinh văn bản
 generation_config = {
@@ -60,6 +60,7 @@ if prompt:
                 st.write(response.text)
             except Exception as e:
                 st.error(f"Có lỗi xảy ra: {e}")
+
 
 
 
