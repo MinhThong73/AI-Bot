@@ -1,6 +1,9 @@
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
+import streamlit as st
+st.title("TEST OK 🚀")
+st.write("Nếu thấy dòng này là app chạy bình thường")
 # 1. Cấu hình API Key của bạn
 load_dotenv()
 
@@ -54,4 +57,5 @@ def chat_ve_khoa_hoc():
             print(f"Có lỗi xảy ra: {e}")
 
 if __name__ == "__main__":
+
     chat_ve_khoa_hoc()
